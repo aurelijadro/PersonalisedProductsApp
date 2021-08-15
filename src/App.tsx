@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { ClientForm, ProductsList } from "./components";
+import { Client, filterApplicableProducts, Product } from "./utilities";
+import { productsServiceMock } from "./mocks/ProductsServiceMock";
+import "./App.scss";
 
-function App() {
+function ClientApp() {
+  const savedProducts = sessionStorage.getItem("clientProducts");
+  const parsedProducts = savedProducts ? JSON.parse(savedProducts) : [];
+  const [applicableProducts, setApplicableProducts] =
+    useState<Product[]>(parsedProducts);
+
+  const getApplicableProducts = async (client: Client) => {
+    const products = productsServiceMock.getProducts();
+    const applicableProducts = products.filter((product) =>
+      filterApplicableProducts(product, client)
+    );
+    setApplicableProducts(applicableProducts);
+    sessionStorage.removeItem("clientProducts");
+    sessionStorage.setItem(
+      "clientProducts",
+      JSON.stringify(applicableProducts)
+    );
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClientForm onSubmit={getApplicableProducts} />
+      <ProductsList applicableProducts={applicableProducts} />
     </div>
   );
 }
 
-export default App;
+export default ClientApp;

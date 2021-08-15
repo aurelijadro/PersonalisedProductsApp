@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Current Account",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["low", "medium", "high"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 2,
+      "title": "Current Account Plus",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["high"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 3,
+      "title": "Junior Saver Account",
+      "applicableAgeRanges": ["ageGroup1"],
+      "applicableIncomeRanges": ["low", "medium", "high"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 4,
+      "title": "Student Account",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["low", "medium", "high"],
+      "onlyApplicableForStudents": true
+    },
+    {
+      "id": 5,
+      "title": "Senior Account",
+      "applicableAgeRanges": ["ageGroup3"],
+      "applicableIncomeRanges": ["low", "medium", "high"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 6,
+      "title": "Debit Card",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["low"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 7,
+      "title": "Credit Card",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["medium", "high"],
+      "onlyApplicableForStudents": false
+    },
+    {
+      "id": 8,
+      "title": "Gold Credit Card",
+      "applicableAgeRanges": ["ageGroup2", "ageGroup3"],
+      "applicableIncomeRanges": ["high"],
+      "onlyApplicableForStudents": false
+    }
+  ]
+}

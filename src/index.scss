@@ -1,0 +1,44 @@
+@import "utilities/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  background-color: $grey;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  height: 97vh;
+}
+
+h3 {
+  font-size: $font-large;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: $padding-normal;
+}
+
+p {
+  font-size: $font-normal;
+  font-weight: $font-normal;
+}
+
+button {
+  align-self: center;
+  background-color: $blue;
+  border: none;
+  border-radius: 0.25rem;
+  color: $white;
+  cursor: pointer;
+  margin: $margin-small;
+  min-width: 100%;
+  padding: $margin-small;
+  &:hover {
+    background-color: $grey;
+  }
+}

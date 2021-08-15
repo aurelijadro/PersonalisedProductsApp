@@ -1,0 +1,51 @@
+@import "../../utilities/variables.scss";
+
+.client-form-container {
+  label {
+    display: block;
+    font-weight: $medium;
+    font-size: $font-normal;
+  }
+
+  form {
+    background-color: $white;
+    border-radius: 0.25rem;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    margin: $margin-normal;
+    padding: $padding-large;
+    min-height: 28rem;
+    min-width: 14rem;
+  }
+
+  input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: $margin-small;
+    width: auto;
+  }
+
+  input,
+  select {
+    border: 1px solid $light-grey;
+    border-radius: 0.25rem;
+    margin-top: $margin-small;
+    padding: $padding-small;
+    width: 100%;
+  }
+
+  select {
+    display: block;
+  }
+}
+
+.validation {
+  color: $red;
+  height: 16px;
+}

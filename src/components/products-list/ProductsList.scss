@@ -1,0 +1,14 @@
+@import "../../utilities/variables.scss";
+
+.products-list-container {
+  padding: $padding-large;
+  background-color: $blue;
+  border-radius: 0.25rem;
+  min-height: 28rem;
+  min-width: 14rem;
+  margin: $margin-normal;
+  box-shadow: $shadow;
+  h3 {
+    color: $white;
+  }
+}

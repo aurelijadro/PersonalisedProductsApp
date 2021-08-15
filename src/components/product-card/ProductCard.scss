@@ -1,0 +1,16 @@
+@import "../../utilities/variables.scss";
+
+.product-card {
+  background-color: $white;
+  border-radius: 0.25rem;
+  box-shadow: $shadow;
+  margin: $margin-normal 0;
+  padding: $padding-normal;
+  input {
+    margin-right: $margin-small;
+  }
+  label {
+    font-weight: $medium;
+    font-size: $font-normal;
+  }
+}
