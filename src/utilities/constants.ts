@@ -22,5 +22,3 @@ export const ageRanges = [
     medium = 'medium',
     high = 'high'
   }
-
-  export const productListMock = [{productTitle: 'Current Account'}, {productTitle: 'Current Account Plus'}, {productTitle: 'Junior Saver Account'}]
