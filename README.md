@@ -5,8 +5,8 @@ Simple one page application, which displays applicable products for client based
 
 After cloning the project in its rood directory run
 
-### `npm install`
+`npm install`
 
 and 
 
-### `npm start`
+`npm start`
